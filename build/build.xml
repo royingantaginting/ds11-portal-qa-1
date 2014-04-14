@@ -22,7 +22,8 @@
                                   clean,
                                   phploc,
                                   phpmd,
-                                  phpcpd">
+                                  phpcpd,
+                                  phpcs-cli">
     <!-- Moved inside target to support properties in target name -->
     <phingcall target="coder-review-d${drupal.version}">
       <!-- Run the target as if it was executed from the Drupal root
@@ -235,7 +236,7 @@ specific prefix. -->
 
     <!-- Perform actual coder review for each style -->
     <foreach target="coder-review" param="coder.review.type"
-             list="comment,i18n,security,sql,style" />
+             list="comment,i18n,security,sql" />
   </target>
 
 <!-- #### Perform coder review
