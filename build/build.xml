@@ -15,7 +15,6 @@
                                  clean,
                                  lint-php-custom,
                                  lint-js-custom,
-                                 lint-css-custom,
                                  simpletest"/>
 
   <target name="analyze" depends="init,
